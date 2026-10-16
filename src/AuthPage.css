@@ -1,0 +1,200 @@
+.auth-wrap {
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 20px;
+}
+
+.auth-inner {
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* LOGO */
+.auth-logo {
+  width: 180px;
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.auth-portal-tag {
+  font-family: 'Bull VF', Helvetica, Arial, sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .26em;
+  text-transform: uppercase;
+  color: #bbb;
+  margin-bottom: 32px;
+}
+
+/* DIVIDER */
+.auth-divider {
+  width: 40px;
+  height: 2px;
+  background: #d2003c;
+  margin-bottom: 32px;
+  flex-shrink: 0;
+}
+
+/* TEXT */
+.auth-eyebrow {
+  font-family: 'Bull VF', Helvetica, Arial, sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  color: #d2003c;
+  margin-bottom: 12px;
+}
+
+.auth-title {
+  font-family: 'Bull VF', Helvetica, Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.02;
+  letter-spacing: -.01em;
+  text-transform: uppercase;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.auth-desc {
+  font-family: 'Bull VF', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.75;
+  color: #666;
+  margin-bottom: 22px;
+  max-width: 360px;
+}
+
+/* EMAIL BADGE */
+.auth-email-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Bull VF', Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  background: #f5f5f5;
+  border: 1px solid #e8e8e8;
+  padding: 8px 18px;
+  border-radius: 100px;
+  margin-bottom: 32px;
+}
+
+.auth-email-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #d2003c;
+  flex-shrink: 0;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: .6; transform: scale(.85); }
+}
+
+/* OTP */
+.auth-otp-label {
+  font-family: 'Bull VF', Helvetica, Arial, sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: #aaa;
+  margin-bottom: 12px;
+}
+
+.auth-otp-wrap {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.otp-box {
+  width: 56px;
+  height: 64px;
+  border: 2px solid #e0e0e0;
+  border-radius: 3px;
+  font-family: 'Bull VF', Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: .04em;
+  text-align: center;
+  color: #111;
+  outline: none;
+  background: #fff;
+  transition: border-color .18s, box-shadow .18s, background .18s;
+  -webkit-appearance: none;
+}
+
+.otp-box:focus {
+  border-color: #d2003c;
+  box-shadow: 0 0 0 3px rgba(210, 0, 60, .08);
+}
+
+.otp-box.otp-filled {
+  border-color: #d2003c;
+  color: #d2003c;
+  background: rgba(210, 0, 60, .03);
+}
+
+/* ERROR */
+.auth-error {
+  font-family: 'Bull VF', Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  color: #d2003c;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+/* BUTTON */
+.auth-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 16px;
+  background: #e8e8e8;
+  color: #aaa;
+  font-family: 'Bull VF', Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  border: none;
+  cursor: not-allowed;
+  transition: background .2s, color .2s, transform .14s;
+  clip-path: polygon(0 0, calc(100% - 13px) 0, 100% 100%, 13px 100%);
+  margin-bottom: 32px;
+}
+
+.auth-cta.auth-cta-ready {
+  background: #d2003c;
+  color: #fff;
+  cursor: pointer;
+}
+
+.auth-cta.auth-cta-ready:hover {
+  background: #a8002f;
+  transform: translateY(-1px);
+}
+
+/* FOOTER NOTE */
+.auth-footer-note {
+  font-family: 'Bull VF', Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.7;
+  color: #ccc;
+}
